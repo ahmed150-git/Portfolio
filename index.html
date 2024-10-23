@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d84c3f1585.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1><span>A</span>hmed.</h1>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" id="menu-icon" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-end Web Developer</p>
+          <h1>
+            Hi, I'm <span>Ahmed</span> From <br />
+            Gilgit Baltistan Pakistan
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------about------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/InShot_20241007_122402173.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hi, I'm Ahmed Ali, a web developer and data science learner. I'm
+              currently taking a Data Science and AI course from NUST with the
+              Gilgit-Baltistan government under the HISDP program. I’m also
+              learning full-stack development with the MERN stack. I love
+              creating websites and exploring AI.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-end Development</span><br />HTML, CSS, JavaScript
+                </li>
+                <li>
+                  <span>Data Science & AI</span><br />Understanding of machine
+                  learning concepts, data preprocessing, and PCA analysis
+                </li>
+                <li>
+                  <span>Back-end Development (In Progress)</span><br />MERN
+                  Stack (MongoDB, Express.js, React, Node.js)
+                </li>
+              </ul>
+            </div>
+            <!-- you can replace this  -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023-2024</span><br />Front-end Development form DPAK IT
+                </li>
+                <li>
+                  <span>2024 -current</span><br />Pursuing Data Science and AI
+                  from HDISP
+                </li>
+                <li>
+                  <span>2024 -current</span><br />Pursuing MERN Stack course
+                  form PFTP
+                </li>
+              </ul>
+            </div>
+
+            <!-- you can replace this  -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021</span><br />Matric from Model High School Khaplu
+                </li>
+                <li>
+                  <span>2024</span><br />FSC from Public School and College
+                  Skardu
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- ---------------------------services-------------------------- -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Data Science & AI</h2>
+          <p>
+            I offer expertise in data analysis, machine learning, and AI. From
+            data preprocessing to building predictive models, I help uncover
+            insights and develop AI-driven solutions tailored to your business
+            needs.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Front-end Development</h2>
+          <p>
+            I specialize in creating responsive, user-friendly websites using
+            HTML, CSS, and JavaScript. My focus is on delivering visually
+            appealing designs that provide a seamless user experience across all
+            devices.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Back-end Development (In Progress)</h2>
+          <p>
+            Currently expanding my skills in back-end development with the MERN
+            stack (MongoDB, Express, React, Node.js). Soon, I will offer
+            complete full-stack solutions for building scalable and efficient
+            web applications.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------portfolio-------------------- -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="img" />
+          <div class="layer">
+            <h3>Social Media app</h3>
+            <p>
+              This app connect you to the talented people around the world.
+              Downlaod it form playstore.
+            </p>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="img" />
+          <div class="layer">
+            <h3>Music app</h3>
+            <p>
+              This app connect you to the talented people around the world.
+              Downlaod it form playstore.
+            </p>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="img" />
+          <div class="layer">
+            <h3>Online Shopping app</h3>
+            <p>
+              This app connect you to the talented people around the world.
+              Downlaod it form playstore.
+            </p>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ---------------------contact--------------------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> a.aweb150@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> 03555648150</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com"
+              ><i class="fa-brands fa-twitter-square"></i
+            ></a>
+            <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <a href="images/My CV.pdf" download class="btn btn2">Downlaod CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input
+              type="text"
+              name="Name"
+              placeholder="Enter your name "
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Enter your email"
+              required
+            />
+            <textarea
+              name="MRessage"
+              rows="6"
+              placeholder="Your message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="copyright">
+      <p class="text-footer">
+        Copyright &copy; Made with <i class="fa-solid fa-heart"></i> by Ahmed
+        Ali
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("side-menu");
+
+    var menuicon = document.getElementById("menu-icon");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+
+      menuicon.style.display = "none";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+
+      menuicon.style.display = "block";
+    }
+  </script>
+</html>
